@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(@NonNull Location location) {
-
+                double lat = location.getLatitude();
+                double lon = location.getLongitude();
+                locationTextView.setText(String.format("Lat: %f, Long: %f", lat, lon));
             }
             @Override
             public void onStatusChanged(String provider, int status, Bundle extras){

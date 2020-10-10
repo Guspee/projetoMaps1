@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">projetoMaps</string>
+
+    <string name="no_gps_no_app">Som o GPS o aplicativo não funciona</string>
+</resources>
